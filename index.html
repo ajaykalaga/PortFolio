@@ -25,7 +25,54 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
+
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* Ensure chatbot always stays above page content */
+    #chatbot {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      z-index: 9999;
+      display: none;
+      width: 380px;
+      max-width: calc(100vw - 40px);
+      height: 520px;
+      max-height: calc(100vh - 120px);
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Mobile responsive chatbot */
+    @media (max-width: 600px) {
+      #chatbot {
+        right: 10px;
+        left: 10px;
+        width: auto;
+        height: 70vh;
+        bottom: 80px;
+      }
+    }
+
+    #chat-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10000;
+      background: #2563eb;
+      color: white;
+      border: none;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+  </style>
 
 </head>
 
@@ -77,7 +124,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Ajay Sharma Kalaga</h2>
-        <p>I'm <span class="typed" data-typed-items=" Developer, Tester">Tester</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items=" Developer, Gen Ai Engineer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -88,13 +135,24 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Django Developer with 2 years of hands-on experience in building, testing, and deploying 
-        web applications using Python, Django, and REST frameworks. Skilled in designing models, 
-        authentication, and CRUD operations, with strong knowledge of relational databases 
-        (PostgreSQL/MySQL) and front-end technologies (HTML, CSS, JavaScript). Currently working as
-         a Programmer Analyst at Cognizant, where I contribute to software testing while actively 
-         developing Django applications. Experienced in integrating APIs, handling user 
-         authentication, and deploying applications on both cloud and local servers.</p>
+        <p>
+          Python Backend Developer with around 2 years of experience working with Django and backend systems. 
+          I specialize in building REST APIs, authentication systems, and scalable backend services using 
+          Python, Django, and Django REST Framework.
+          
+          Alongside backend development, I am actively working with Generative AI technologies including 
+          LLM APIs, LangChain, Retrieval-Augmented Generation (RAG), vector databases, and embeddings. 
+          I have built an AI-powered portfolio assistant that answers questions about my experience using 
+          real data from my resume and project notes.
+          
+          I am also strong in Data Structures and Algorithms and have solved 500+ problems on LeetCode 
+          using Python. My problem-solving experience includes trees, graphs, BFS/DFS, dynamic programming, 
+          sliding window, hashing, and recursion.
+          
+          Currently working as a Programmer Analyst at Cognizant, I contribute to software quality and 
+          testing while continuously building backend and AI-powered applications to strengthen my 
+          engineering skills.
+          </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -104,16 +162,24 @@
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>SDET &amp; Developer.</h2>
+            <h2>Python Backend Engineer.</h2>
             <p class="fst-italic py-3">
-              Django Developer with 2 years of hands-on experience in building, testing, and 
-              deploying web applications using Python, Django, and REST frameworks. Skilled 
-              in designing models, authentication, and CRUD operations, with strong knowledge 
-              of relational databases (PostgreSQL/MySQL) and front-end technologies (HTML, CSS, 
-              JavaScript). Currently working as a Programmer Analyst at Cognizant, where I 
-              contribute to software testing while actively developing Django applications. 
-              Experienced in integrating APIs, handling user authentication, and deploying 
-              applications on both cloud and local servers.
+              Python Backend Developer with around 2 years of experience working with Django and backend systems. 
+              I specialize in building REST APIs, authentication systems, and scalable backend services using 
+              Python, Django, and Django REST Framework.
+
+              Alongside backend development, I am actively working with Generative AI technologies including 
+              LLM APIs, LangChain, Retrieval-Augmented Generation (RAG), vector databases, and embeddings. 
+              I have built an AI-powered portfolio assistant that answers questions about my experience using 
+              real data from my resume and project notes.
+
+              I am also strong in Data Structures and Algorithms and have solved 500+ problems on LeetCode 
+              using Python. My problem-solving experience includes trees, graphs, BFS/DFS, dynamic programming, 
+              sliding window, hashing, and recursion.
+
+              Currently working as a Programmer Analyst at Cognizant, I contribute to software quality and 
+              testing while continuously building backend and AI-powered applications to strengthen my 
+              engineering skills.
 
             </p>
             <div class="row">
@@ -243,13 +309,11 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Django Developer with 2 years of hands-on experience in building, testing, and 
-        deploying web applications using Python, Django, and REST frameworks. Skilled 
-        in designing models, authentication, and CRUD operations, with strong knowledge 
-        of relational databases (PostgreSQL/MySQL) and front-end technologies (HTML, CSS, JavaScript).
-         Currently working as a Programmer Analyst at Cognizant, where I contribute to software 
-         testing while actively developing Django applications. Experienced in integrating APIs, 
-         handling user authentication, and deploying applications on both cloud and local servers.</p>
+        <p>Python Backend Developer with 2.5 years of experience building scalable web applications using Django and Django REST Framework. Experienced in designing REST APIs, authentication systems, and database-driven applications using PostgreSQL and MySQL.
+
+          In addition to backend development, I actively work with Generative AI technologies including LangChain, Retrieval-Augmented Generation (RAG), LLM APIs, embeddings, and vector databases. I built an AI-powered portfolio assistant that answers questions about my experience using real project and resume data.
+          
+          Strong problem-solving background with 500+ LeetCode problems solved using Python, covering trees, graphs, dynamic programming, BFS/DFS, and advanced algorithmic patterns.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -262,25 +326,25 @@
               <h5>SEP 2023 - Present</h5>
               <p><em>Hyderabad, India</em></p>
               <ul>
-                <li>Worked on SAP manual testing, validating business processes and ensuring system reliability.</li>
-                <li>Collaborated with developers, product managers, and testers to troubleshoot issues and deliver quality outcomes.</li>
-                <li>Participated in requirements analysis and validation, ensuring software meets the intended functionality.</li>
-                <li>Contributed to the optimization of testing processes, improving efficiency and coverage</li>
-                <li>Alongside project work, actively built and deployed Django-based applications, strengthening backend and database skills.</li>
+               <li>Developed and maintained backend services using Python, Django, and Django REST Framework.</li>
+<li>Built RESTful APIs with authentication, validation, pagination, and structured error handling.</li>
+<li>Worked extensively with PostgreSQL/MySQL using Django ORM; handled schema migrations and
+query optimization.</li>
+<li>Investigated and resolved production issues through logs and root-cause analysis.</li>
+<li>Improved API response time by ~30% through database query optimization and backend tuning.</li>
+<li>Participated in code reviews and applied software engineering best practices to maintain code
+quality.</li>
+<li>Collaborated with cross-functional teams in Agile/Scrum sprints to deliver backend features.</li>
+<li>Wrote and maintained technical documentation for APIs and backend workflows.</li>
+<li>Designed reusable backend modules and utility functions to improve code maintainability and
+reduce duplication.</li>
+<li>Performed basic unit and API testing to validate backend functionality before releases.</li>
+<li>Monitored application logs and performance metrics to ensure system stability and reliability.</li>
+<li>Assisted in deployment activities and environment configuration for backend services during
+releases.</li>
+<li>Coordinated with QA teams to reproduce issues, validate fixes, and ensure smooth production rollouts.</li>
 
                
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Cognizant Technology Solutions – SDET Intern</h4>
-              <h5>Jan 2023 - Aug 2023</h5>
-              <p><em>Chennai, India</em></p>
-              <ul>
-                <li>Trained in functional testing concepts, with hands-on experience in Java and Selenium.</li>
-                <li>Developed and automated web applications using Selenium for improved test efficiency.</li>
-                <li>Completed projects focused on website automation and regression testing.</li>
-                
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -294,21 +358,18 @@
               <p><em>SCSVMV University, Kanchipuram,Tamil Nadu</em></p>
               <h5>CGPA-9.70</h5>
             </div><!-- Edn Resume Item -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="resume-title">Skills</h3>
-              <div class="resume-item">
-                <ul>
-                  <li>Languages: Python, Java, SQL, JavaScript, C</li>
-                  <li>Frameworks & Tools: Django,Netlify, GitHub</li>
-                  <li>Machine Learning: Neural Networks (CNN, ANN), Random Forest, NLP</li>
-                  <li>Web Development: HTML, CSS, JavaScript</li>
-                  <li>Data Structures & Algorithms: Proficient in designing and optimizing solutions</li>
-                  <li>Version Control: Git, GitHub</li>
-  
-                 
-                </ul>
-              </div><!-- Edn Resume Item -->
-            </div>
+            <h3 class="resume-title">Technical Skills</h3>
+<div class="resume-item">
+  <ul>
+    <li><strong>Programming:</strong> Python, SQL, JavaScript</li>
+    <li><strong>Backend Development:</strong> Django, Django REST Framework, REST API Design, Authentication, CRUD Applications</li>
+    <li><strong>Databases:</strong> PostgreSQL, MySQL, Django ORM, Database Modeling, Query Optimization</li>
+    <li><strong>Generative AI:</strong> LangChain, Retrieval-Augmented Generation (RAG), LLM APIs, Embeddings, Vector Databases</li>
+    <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Problem Solving:</strong> 500+ LeetCode Problems (Trees, Graphs, BFS/DFS, Dynamic Programming)</li>
+    <li><strong>Tools:</strong> Git, GitHub, Netlify</li>
+  </ul>
+</div>
            
             </div>
 
@@ -524,6 +585,22 @@
       </div>
 
     </section><!-- /Contact Section -->
+<!--Chat bot section-->
+<div id="chatbot">
+  <div id="chat-header">
+    <span>🤖 Ask Ajay AI</span>
+    <span id="close-chat">×</span>
+  </div>
+
+  <div id="chat-messages"></div>
+
+  <div id="chat-input">
+    <input id="user-input" placeholder="Ask something about Ajay..." />
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
+
+<button id="chat-toggle">💬</button>
 
   </main>
 
@@ -562,6 +639,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+  
   // Map category -> filter class used by Isotope
   const categoryToFilterClass = (cat) => {
     const key = cat.toLowerCase();
@@ -612,6 +690,7 @@
 </script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 
 </body>
 
